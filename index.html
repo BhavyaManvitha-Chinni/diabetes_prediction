@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Diabetes Prediction</title>
+    </head>
+    <body>
+        <h1>Diabetes Prediction</h1>
+        <form action="/predict" method="post">
+            <input type="text" name="Pregnancies" placeholder="Pregnancies" required>
+            <input type="text" name="Glucose" placeholder="Glucose" required>
+            <input type="text" name="BloodPressure" placeholder="BloodPressure" required>
+            <input type="text" name="SkinThickness" placeholder="SkinThickness" required>
+            <input type="text" name="Insulin" placeholder="Insulin" required>
+            <input type="text" name="BMI" placeholder="BMI" required>
+            <input type="text" name="DiabetesPedigreeFunction" placeholder="DiabetesPedigreeFunction" required>
+            <input type="text" name="Age" placeholder="Age" required>
+            <button type="submit">Predict</button>
+        </form>
+        <div id="prediction"></div>
+    </body>
+    </html>
